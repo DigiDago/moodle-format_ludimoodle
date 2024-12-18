@@ -107,6 +107,10 @@
         padding: 3px 6px;
         width: 50px;
 
+        img {
+            width: 100%;
+        }
+
         &.badgecompletion-cm {
             width: 75px;
             margin: auto;
@@ -304,6 +308,10 @@
                         outline: none;
                         max-width: 100px;
                         flex: auto;
+
+                        .avatar-item-img {
+                            width: 100px;
+                        }
 
                         &.avatar-item-owned {
                             cursor: pointer;
@@ -650,9 +658,15 @@
     // Style only for the world highschool.
     .ludimoodle-world-highschool {
         // Avatar.
-        .avatar-image:has(.item-equiped) {
+        .avatar-image {
+            &:has(.item-equiped) {
+                .avatar-character {
+                    display: none;
+                }
+            }
+            .avatar-slot,
             .avatar-character {
-                display: none;
+                width: 100%;
             }
         }
 
@@ -669,6 +683,7 @@
         // Progression game element.
         .progression-planet-inprogress {
             background-image: url('[[pix:format_ludimoodle|highschool/progress/course-planet-bg]]');
+            background-size: contain;
         }
         .max {
             background-image: url('[[pix:format_ludimoodle|highschool/progress/course-planet-max-bg]]');

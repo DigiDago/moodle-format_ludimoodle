@@ -68,6 +68,8 @@
     right: 5px;
     padding: 3px 6px;
     width: 50px; }
+    .format-ludimoodle .badgecompletion img {
+      width: 100%; }
     .format-ludimoodle .badgecompletion.badgecompletion-cm {
       width: 75px;
       margin: auto;
@@ -204,6 +206,8 @@
           outline: none;
           max-width: 100px;
           flex: auto; }
+          .format-ludimoodle .modal-dialog .avatar-inventory .tab-content-inventory .avatar-slot .avatar-item .avatar-item-img {
+            width: 100px; }
           .format-ludimoodle .modal-dialog .avatar-inventory .tab-content-inventory .avatar-slot .avatar-item.avatar-item-owned {
             cursor: pointer; }
             .format-ludimoodle .modal-dialog .avatar-inventory .tab-content-inventory .avatar-slot .avatar-item.avatar-item-owned:hover, .format-ludimoodle .modal-dialog .avatar-inventory .tab-content-inventory .avatar-slot .avatar-item.avatar-item-owned:focus {
@@ -431,6 +435,9 @@
     left: calc(-75px - 400%); } }
   .format-ludimoodle .ludimoodle-world-highschool .avatar-image:has(.item-equiped) .avatar-character {
     display: none; }
+  .format-ludimoodle .ludimoodle-world-highschool .avatar-image .avatar-slot,
+  .format-ludimoodle .ludimoodle-world-highschool .avatar-image .avatar-character {
+    width: 100%; }
   .format-ludimoodle .ludimoodle-world-highschool .ranking-summary {
     display: block;
     max-height: 175px;
@@ -438,7 +445,8 @@
     margin-right: auto;
     margin-top: -15px; }
   .format-ludimoodle .ludimoodle-world-highschool .progression-planet-inprogress {
-    background-image: url("[[pix:format_ludimoodle|highschool/progress/course-planet-bg]]"); }
+    background-image: url("[[pix:format_ludimoodle|highschool/progress/course-planet-bg]]");
+    background-size: contain; }
   .format-ludimoodle .ludimoodle-world-highschool .max {
     background-image: url("[[pix:format_ludimoodle|highschool/progress/course-planet-max-bg]]"); }
   .format-ludimoodle .ludimoodle-world-highschool .section-progress .asteroids {
